@@ -1,4 +1,4 @@
-package main
+package dsaingolang
 
 import (
 	"encoding/json"
