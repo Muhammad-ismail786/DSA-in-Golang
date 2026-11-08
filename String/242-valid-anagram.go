@@ -9,12 +9,10 @@ func isAnagram(s string, t string) bool {
 
 	var count [26]int
 
-	// Count characters in s
 	for _, ch := range s {
 		count[ch-'a']++
 	}
 
-	// Decrease characters in t
 	for _, ch := range t {
 		count[ch-'a']--
 
@@ -35,9 +33,7 @@ func main() {
 	fmt.Print("Enter second string: ")
 	fmt.Scan(&t)
 
-	if isAnagram(s, t) {
-		fmt.Println("Output: true")
-	} else {
-		fmt.Println("Output: false")
-	}
+	result := isAnagram(s, t)
+
+	fmt.Println("Output:", result)
 }
